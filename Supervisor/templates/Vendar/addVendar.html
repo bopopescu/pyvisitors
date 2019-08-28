@@ -1,0 +1,82 @@
+{%extends 'supervisor_master.html'%}
+{%block content%}
+ <div class="container-fluid">
+ 	
+	<div class="row">
+        <div class="col-xs-12">
+            <div class="box box-info">
+                <div class="box-header">
+                    <h4>
+                        <center>Add Vender</center>
+                    </h4>
+                </div>
+                    <form class="form-horizontal" method="post" action="">
+                		<div class="box-body">
+						{% csrf_token %}
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" value="" placeholder="Enter Staff Name" name="name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label>Address</label>
+                                            <textarea class="form-control" placeholder="Enter Address" name="address"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label>Mobile</label>
+                                            <input type="number" class="form-control" placeholder="Enter Mobile Number" value="" name="mobile">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" placeholder="Enter Email " name="email" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" placeholder="Enter Password" name="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <label>Confirm Password</label>
+                                            <input type="password" class="form-control" placeholder="Enter conform Password" name="password_confirmation">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div align="center">
+                                <button type="submit" class="btn btn-info">Add Staff</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
